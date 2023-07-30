@@ -14,7 +14,7 @@ def process_data():
     input_folder = 'input'
     output_folder = 'temp'
     
-   
+
     # Import train.csv and test.csv into dataframes
     train_df = pd.read_csv(os.path.join(input_folder, 'training.csv'))
     test_df = pd.read_csv(os.path.join(input_folder, 'test.csv'))
