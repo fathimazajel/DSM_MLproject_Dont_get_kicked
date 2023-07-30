@@ -37,23 +37,6 @@ def train_and_predict(train_df, test_df, target_column):
     return train_predictions, test_predictions
 
 if __name__ == "__main__":
-    # Import the necessary module for preprocessing
-    import preprocessing
-
-    # Execute the function from the script
-    preprocessing.process_data()
-
-    # Preprocessing
-    train_path = 'temp/training.csv'
-    test_path = 'temp/test.csv'
-    output_train_path = 'temp/preprocessed_train.csv'
-    output_test_path = 'temp/preprocessed_test.csv'
-
-    train_df, test_df = preprocessing.preprocess_data(train_path, test_path)
-
-    preprocessing.write_data(train_df, output_train_path)
-    preprocessing.write_data(test_df, output_test_path)
-
     # Read the data
     train_df = read_data('temp/preprocessed_train.csv')
     test_df = read_data('temp/preprocessed_test.csv')
